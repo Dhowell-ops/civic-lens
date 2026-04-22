@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,13 +8,11 @@
   <meta name="description" content="Civic Lens is an independent news organization committed to unbiased reporting, investigative journalism, and truth-driven storytelling.">
   <meta name="author" content="Stacey Howell">
   <meta name="theme-color" content="#1D3557">
-
   <meta property="og:title" content="Civic Lens">
-  <meta property="og:description" content="Independent news, investigative journalism, and truth-driven storytelling.">
+  <meta property="og:description" content="See Clearly. Know Deeply. Act Justly.">
+  <meta property="og:image" content="images/social.jpg">
+  <meta property="og:url" content="https://example.com">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="images/civic-lens-social.jpg">
-  <meta property="og:url" content="https://example.com/civic-lens">
-
   <link rel="stylesheet" href="styles.css">
   <title>Civic Lens</title>
 </head>
@@ -21,19 +20,26 @@
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <header class="site-header">
-    <button id="theme-toggle" type="button" aria-label="Toggle light and dark mode">
-      <svg width="35" height="35" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-        <defs><clipPath id="a"><path d="m18.512 18.512h62.977v62.977h-62.977z"/></clipPath></defs>
-        <g clip-path="url(#a)"><path d="m65.098 68.164c-9.2812 7.7266-23.09 7.2422-31.797-1.4648-8.707-8.7031-9.1953-22.516-1.4648-31.793 0.74609-0.89844 2.1016-0.96875 2.9258-0.14453l30.473 30.477c0.82422 0.82422 0.75391 2.1797-0.13672 2.9258m7.168-40.43c-12.297-12.297-32.234-12.297-44.531 0-12.297 12.301-12.297 32.234 0 44.531s32.234 12.297 44.531 0 12.297-32.23 0-44.531" fill="currentColor" fill-rule="evenodd"/></g>
-      </svg>
-    </button>
+    <div class="container">
 
-    <div class="header-inner">
-      <h1>Civic Lens</h1>
-      <p class="tagline">See Clearly. Know Deeply. Act Justly.</p>
+      <div class="header-inner">
+        <div class="branding">
+          <h1>Civic Lens</h1>
+          <p class="tagline">See Clearly. Know Deeply. Act Justly.</p>
+        </div>
 
-      <nav class="site-nav" aria-label="Primary navigation">
-        <input type="checkbox" id="menu-toggle" hidden>
+        <button id="theme-toggle" type="button" aria-label="Toggle light and dark mode">
+          <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <defs><clipPath id="a"><path d="m18.512 18.512h62.977v62.977h-62.977z"/></clipPath></defs>
+            <g clip-path="url(#a)">
+              <path d="m65.098 68.164c-9.2812 7.7266-23.09 7.2422-31.797-1.4648-8.707-8.7031-9.1953-22.516-1.4648-31.793 0.74609-0.89844 2.1016-0.96875 2.9258-0.14453l30.473 30.477c0.82422 0.82422 0.75391 2.1797-0.13672 2.9258m7.168-40.43c-12.297-12.297-32.234-12.297-44.531 0-12.297 12.301-12.297 32.234 0 44.531s32.234 12.297 44.531 0 12.297-32.23 0-44.531" fill="currentColor" fill-rule="evenodd"/>
+            </g>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="site-nav" aria-label="Primary">
+        <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="menu-button">Menu</label>
         <ul class="menu">
           <li><a href="#breaking-news">Breaking News</a></li>
@@ -42,22 +48,20 @@
           <li><a href="#social">Social</a></li>
         </ul>
       </nav>
+
     </div>
   </header>
-
   <main id="main-content">
-    <section class="intro" aria-labelledby="welcome-heading">
-      <h2 id="welcome-heading">Welcome to Civic Lens</h2>
+    <section class="intro container">
+      <h2>Welcome to Civic Lens</h2>
       <p>We are an independent news organization dedicated to unbiased reporting, investigative journalism, and truth-driven storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized voices, and shine light on the systems that shape our society.</p>
-      <blockquote class="quote">
-        <p>“We don’t follow the narrative. We follow the facts.”</p>
-      </blockquote>
+      <blockquote>“We don't follow the narrative. We follow the facts.”</blockquote>
     </section>
 
-    <section id="breaking-news" aria-labelledby="breaking-news-heading">
-      <h2 id="breaking-news-heading">Breaking News</h2>
+    <section id="breaking-news" class="news-section container">
+      <h2>Breaking News</h2>
       <div class="breaking-grid">
-        <article class="news-card breaking-card">
+        <article class="breaking-card">
           <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
           <p>The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.</p>
           <video controls preload="metadata">
@@ -66,7 +70,7 @@
           </video>
         </article>
 
-        <article class="news-card breaking-card">
+        <article class="breaking-card">
           <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
           <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.</p>
           <video controls preload="metadata">
@@ -77,36 +81,36 @@
       </div>
     </section>
 
-    <section id="featured-articles" aria-labelledby="featured-articles-heading">
-      <h2 id="featured-articles-heading">Featured Articles</h2>
-      <div class="article-grid">
-        <article class="news-card article-card"><h3>The Cost of Silence: Whistleblower Stories from Inside Tech Giants</h3><p>Former employees speak out about ethical breaches in data privacy and surveillance.</p></article>
-        <article class="news-card article-card"><h3>Unequal Justice: How Bail Systems Harm the Poor</h3><p>An investigative series on cash bail and its disproportionate impact.</p></article>
-        <article class="news-card article-card"><h3>Invisible Work: The Lives of Migrant Caregivers</h3><p>Humanizing the labor that keeps households and economies afloat.</p></article>
-        <article class="news-card article-card"><h3>Redlined Still: A New Map of Modern-Day Housing Discrimination</h3><p>Data visualization showing systemic inequality in real estate today.</p></article>
-        <article class="news-card article-card"><h3>Climate Injustice: Who Pays for Pollution?</h3><p>Communities of color bear the brunt of environmental damage.</p></article>
-        <article class="news-card article-card"><h3>Teaching Under Fire: The Fight for Inclusive Education</h3><p>Teachers navigate book bans, curriculum restrictions, and culture wars.</p></article>
-        <article class="news-card article-card"><h3>Food Deserts and Corporate Abandonment</h3><p>Why access to nutrition is a zip code lottery.</p></article>
-        <article class="news-card article-card"><h3>Policing Mental Health: A Broken Response System</h3><p>Examining police interactions with those in crisis.</p></article>
-        <article class="news-card article-card"><h3>The Disinformation Economy</h3><p>Tracing profit motives behind fake news empires.</p></article>
-        <article class="news-card article-card"><h3>Facing the Algorithm: AI and Racial Bias</h3><p>The coded inequalities that shape our lives.</p></article>
-        <article class="news-card article-card"><h3>The Voting Maze</h3><p>A guide to understanding your rights amid changing laws.</p></article>
-        <article class="news-card article-card"><h3>After the Cameras Leave: Long-Term Crisis Recovery</h3><p>Rebuilding trust and infrastructure in disaster-hit communities.</p></article>
+    <section id="featured-articles" class="articles-section container">
+      <h2>Featured Articles</h2>
+      <div class="articles-grid">
+        <article class="article-card"><h3>The Cost of Silence: Whistleblower Stories from Inside Tech Giants</h3><p>Former employees speak out about ethical breaches in data privacy and surveillance.</p></article>
+        <article class="article-card"><h3>Unequal Justice: How Bail Systems Harm the Poor</h3><p>An investigative series on cash bail and its disproportionate impact.</p></article>
+        <article class="article-card"><h3>Invisible Work: The Lives of Migrant Caregivers</h3><p>Humanizing the labor that keeps households and economies afloat.</p></article>
+        <article class="article-card"><h3>Redlined Still: A New Map of Modern-Day Housing Discrimination</h3><p>Data visualization showing systemic inequality in real estate today.</p></article>
+        <article class="article-card"><h3>Climate Injustice: Who Pays for Pollution?</h3><p>Communities of color bear the brunt of environmental damage.</p></article>
+        <article class="article-card"><h3>Teaching Under Fire: The Fight for Inclusive Education</h3><p>Teachers navigate book bans, curriculum restrictions, and culture wars.</p></article>
+        <article class="article-card"><h3>Food Deserts and Corporate Abandonment</h3><p>Why access to nutrition is a zip code lottery.</p></article>
+        <article class="article-card"><h3>Policing Mental Health: A Broken Response System</h3><p>Examining police interactions with those in crisis.</p></article>
+        <article class="article-card"><h3>The Disinformation Economy</h3><p>Tracing profit motives behind fake news empires.</p></article>
+        <article class="article-card"><h3>Facing the Algorithm: AI and Racial Bias</h3><p>The coded inequalities that shape our lives.</p></article>
+        <article class="article-card"><h3>The Voting Maze</h3><p>A guide to understanding your rights amid changing laws.</p></article>
+        <article class="article-card"><h3>After the Cameras Leave: Long-Term Crisis Recovery</h3><p>Rebuilding trust and infrastructure in disaster-hit communities.</p></article>
       </div>
     </section>
 
-    <section id="alerts" class="alerts" aria-labelledby="alerts-heading">
-      <h2 id="alerts-heading">Stay Informed. Stay Empowered.</h2>
+    <section id="alerts" class="alerts-section container">
+      <h2>Stay Informed. Stay Empowered.</h2>
       <p>Receive text messages with the news you want to know.</p>
 
-      <form action="https://wp.zybooks.com/form-viewer.php" method="post">
-        <div class="form-grid">
-          <div class="field-group">
-            <label for="subscriber-name">Name</label>
-            <input id="subscriber-name" name="subscriber-name" type="text" autocomplete="name" required>
+      <form action="https://wp.zybooks.com/form-viewer.php" method="post" class="subscribe-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
           </div>
 
-          <div class="field-group">
+          <div class="form-group">
             <label for="mobile">Mobile</label>
             <input id="mobile" name="mobile" type="tel" autocomplete="tel" inputmode="tel" required>
           </div>
@@ -115,25 +119,25 @@
         <fieldset>
           <legend>Notification Preferences</legend>
           <div class="checkbox-grid">
-            <div><input id="breaking" name="preferences" type="checkbox" value="Breaking News"><label for="breaking">Breaking News</label></div>
-            <div><input id="politics" name="preferences" type="checkbox" value="Politics"><label for="politics">Politics</label></div>
-            <div><input id="weather" name="preferences" type="checkbox" value="Weather"><label for="weather">Weather</label></div>
-            <div><input id="sports" name="preferences" type="checkbox" value="Sports"><label for="sports">Sports</label></div>
-            <div><input id="entertainment" name="preferences" type="checkbox" value="Entertainment"><label for="entertainment">Entertainment</label></div>
-            <div><input id="world" name="preferences" type="checkbox" value="World"><label for="world">World</label></div>
-            <div><input id="financial" name="preferences" type="checkbox" value="Financial"><label for="financial">Financial</label></div>
+            <label><input type="checkbox" name="preferences" value="breaking-news"> Breaking News</label>
+            <label><input type="checkbox" name="preferences" value="politics"> Politics</label>
+            <label><input type="checkbox" name="preferences" value="weather"> Weather</label>
+            <label><input type="checkbox" name="preferences" value="sports"> Sports</label>
+            <label><input type="checkbox" name="preferences" value="entertainment"> Entertainment</label>
+            <label><input type="checkbox" name="preferences" value="world"> World</label>
+            <label><input type="checkbox" name="preferences" value="financial"> Financial</label>
           </div>
         </fieldset>
 
-        <button class="subscribe-button" type="submit">Subscribe</button>
+        <button type="submit" class="subscribe-button">Subscribe</button>
       </form>
     </section>
   </main>
 
   <footer id="social" class="site-footer">
-    <div class="footer-inner">
+    <div class="container">
       <h2>Follow Us</h2>
-      <ul class="social-links">
+      <ul class="social-list">
         <li><a href="#">Twitter/X</a></li>
         <li><a href="#">Instagram</a></li>
         <li><a href="#">YouTube</a></li>
